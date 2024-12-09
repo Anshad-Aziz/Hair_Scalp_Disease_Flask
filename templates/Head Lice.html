@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head Lice</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Head Lice.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/web_logo.jpg') }}" alt="Logo">
+            <span>Hair & Scalp Health</span>
+        </div>
+        <div class="nav-buttons">
+            <button><a href="/common-diseases">Common Hair Diseases</a></button>
+            <button><a href="/predict-image">Upload Image</a></button>
+            <button><a href="/solutions">AI Health Advisor</a></button>
+            <button><a href="/developer">Developer</a></button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 style="text-align: center;">HEAD LICE</h1>
+        <img src="{{ url_for('static', filename='images/head_lice_0002.jpg') }}" alt="Head Lice">
+        <p>Head lice are tiny insects that live on the scalp and feed on human blood. They are contagious and can spread through close contact or by sharing personal items like combs, hats, or towels.</p>
+
+        <h2>What Causes It?</h2>
+        <ul>
+            <li><strong>Close Contact:</strong> Head-to-head contact with someone who has lice.</li>
+            <li><strong>Sharing Items:</strong> Using combs, brushes, hats, or towels of an infected person.</li>
+            <li><strong>Hygiene:</strong> Lice are not related to cleanliness but can spread easily in crowded places.</li>
+        </ul>
+
+        <h2>How Can It Be Treated?</h2>
+        <p>You can manage Head Lice with these steps:</p>
+        <ul>
+            <li><strong>Medicated Shampoo:</strong> Use special lice-killing shampoos available over the counter.</li>
+            <li><strong>Fine-Tooth Comb:</strong> Comb wet hair with a fine-tooth comb to remove lice and nits (eggs).</li>
+            <li><strong>Wash Items:</strong> Wash bedding, hats, and towels in hot water to kill lice.</li>
+            <li><strong>Avoid Sharing:</strong> Don’t share personal items like combs, hats, or towels.</li>
+            <li><strong>Doctor's Advice:</strong> In severe cases, consult a doctor for prescription treatments.</li>
+        </ul>
+        <p style="text-align: center;"><strong>IF THE PROBLEM DOESN’T GO AWAY, TALK TO A DOCTOR.</strong></p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Hair & Scalp Health. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

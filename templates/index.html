@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Disease Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/web_logo.jpg') }}" alt="Logo">
+            <span>Hair & Scalp Health</span>
+        </div>
+        <div class="nav-buttons">
+            <button><a href="/common-diseases">Common Hair Diseases</a></button>
+            <button><a href="/predict-image">Upload Image</a></button>
+            <button><a href="/solutions">AI Health Advisor</a></button>
+            <!-- Developer Button (new) -->
+            <button><a href="/developer">Developer</a></button> <!-- Link to Developer page -->
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Welcome to Hair & Scalp Health</h1>
+        <p>Learn more about common hair and scalp diseases.</p>
+        <div class="disease-gallery">
+            {% for disease in diseases %}
+            <div class="disease-card">
+                <a href="/{{ disease.name | lower | replace(' ', '_') }}">
+                    <img src="{{ url_for('static', filename=disease.image) }}" alt="{{ disease.name }}">
+                </a>
+                <h2>{{ disease.name }}</h2>
+                <p>{{ disease.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Hair & Scalp Health. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

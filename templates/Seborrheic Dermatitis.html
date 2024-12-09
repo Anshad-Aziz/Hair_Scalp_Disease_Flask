@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seborrheic Dermatitis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Seborrheic Dermatitis.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/web_logo.jpg') }}" alt="Logo">
+            <span>Hair & Scalp Health</span>
+        </div>
+        <div class="nav-buttons">
+            <button><a href="/common-diseases">Common Hair Diseases</a></button>
+            <button><a href="/predict-image">Upload Image</a></button>
+            <button><a href="/solutions">AI Health Advisor</a></button>
+            <button><a href="/developer">Developer</a></button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 style="text-align: center;">SEBORRHEIC DERMATITIS</h1>
+        <img src="{{ url_for('static', filename='images/seborrheic_dermatitis_0003.jpg') }}" alt="Seborrheic Dermatitis">
+        <p>Seborrheic Dermatitis is a common skin condition that causes a red, itchy rash with white or yellow scales. It often affects areas of the skin where sebaceous (oil) glands are most active, like the scalp, face, and upper chest.</p>
+
+        <h2>What Causes It?</h2>
+        <ul>
+            <li><strong>Yeast Growth:</strong> A type of yeast (Malassezia) that grows on the skin can trigger the condition.</li>
+            <li><strong>Genetics:</strong> It can run in families, making some people more prone to developing it.</li>
+            <li><strong>Stress:</strong> Stress can sometimes make the condition worse.</li>
+            <li><strong>Other Conditions:</strong> People with conditions like Parkinson’s disease or HIV are more likely to develop Seborrheic Dermatitis.</li>
+        </ul>
+
+        <h2>How Can It Be Treated?</h2>
+        <p>These treatments can help manage Seborrheic Dermatitis:</p>
+        <ul>
+            <li><strong>Medicated Shampoos:</strong> Shampoos with antifungal ingredients like ketoconazole or selenium sulfide can reduce yeast growth on the scalp.</li>
+            <li><strong>Topical Creams:</strong> Anti-inflammatory creams or lotions, such as corticosteroids, can reduce redness and itching.</li>
+            <li><strong>Moisturizers:</strong> Keeping the skin hydrated helps reduce dryness and irritation.</li>
+            <li><strong>Antifungal Medications:</strong> Oral antifungals may be prescribed for severe cases.</li>
+            <li><strong>Avoid Triggers:</strong> Identify and avoid triggers such as stress or harsh skin products.</li>
+        </ul>
+        <p style="text-align: center;"><strong>IF THE PROBLEM DOESN’T GO AWAY, TALK TO A DOCTOR.</strong></p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Hair & Scalp Health. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

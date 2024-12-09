@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alopecia Areata</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Alopecia Areata.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/web_logo.jpg') }}" alt="Logo">
+            <span>Hair & Scalp Health</span>
+        </div>
+        <div class="nav-buttons">
+            <button><a href="/common-diseases">Common Hair Diseases</a></button>
+            <button><a href="/predict-image">Upload Image</a></button>
+            <button><a href="/solutions">AI Health Advisor</a></button>
+            <!-- Developer Button (new) -->
+            <button><a href="/developer">Developer</a></button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+    <h1> ALOPECIA AREATA</h1>
+    <img src="{{ url_for('static', filename='images/Alopecia Areata.jpg') }}" alt="Alopecia Areata">
+    <p>Alopecia Areata is a condition where you lose hair in small, round spots. This happens because your immune system, which normally fights germs, mistakenly attacks your hair roots. It can happen on your head or anywhere else on your body.</p>
+
+    <h2>What Causes It?</h2>
+    <ul>
+        <li><strong>Family History:</strong> If your relatives have it, you’re more likely to get it too.</li>
+        <li><strong>Immune System:</strong> Your body’s defense system attacks your own hair by mistake.</li>
+        <li><strong>Stress:</strong> Stress can make it start or make it worse.</li>
+        <li><strong>Other Factors:</strong> Things like infections or your surroundings might trigger it.</li>
+    </ul>
+
+    <h2>How Can It Be Treated?</h2>
+    <p>There isn’t a permanent cure, but there are ways to manage it and help hair grow back:</p>
+    <ul>
+        <li><strong>Corticosteroids:</strong> Medicines that reduce swelling and calm the immune system.</li>
+        <li><strong>Topical Therapy:</strong> Special creams or chemicals put on the scalp to help hair grow.</li>
+        <li><strong>Minoxidil:</strong> A common medicine you can buy without a prescription to help grow hair.</li>
+        <li><strong>Light Therapy:</strong> A treatment that uses UV light to stimulate hair growth.</li>
+    </ul>
+    <p class="centered-red"><strong>IF THE PROBLEM DOESN’T GO AWAY, TALK TO A DOCTOR.</strong></p>
+
+</div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Hair & Scalp Health. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

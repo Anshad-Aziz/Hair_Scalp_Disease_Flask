@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Disease Classifier - Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='output.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/web_logo.jpg') }}" alt="Logo">
+            <span>Hair & Scalp Health</span>
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-button"><a href="/common-diseases">Common Hair Diseases</a></button>
+            <button class="nav-button"><a href="/predict-image">Upload Image</a></button>
+            <button class="nav-button"><a href="/solutions">AI Health Advisor</a></button>
+            <button class="nav-button"><a href="/developer">Developer</a></button>
+        </div>
+    </nav>
+
+    <!-- Prediction Result Section -->
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div class="result-section">
+            <!-- Display the Uploaded Image -->
+            <div class="image-container">
+                <h2>Your Uploaded Image:</h2>
+                <img src="{{ url_for('send_uploaded_file', filename=file_name) }}" alt="Uploaded Image" class="uploaded-image">
+            </div>
+
+            <!-- Display the Prediction and Confidence -->
+            <div class="result-details">
+                <h2>Predicted Disease: <span class="prediction">{{ prediction }}</span></h2>
+                <p>Confidence Score: <span class="confidence">{{ confidence | round(2) }}</span></p>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="actions">
+            <button class="nav-button"><a href="/predict-image">Try Another Image</a></button>
+            <button class="nav-button"><a href="/">Back to Home For Solutions</a></button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Hair & Scalp Health. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

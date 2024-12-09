@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telogen Effluvium</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Telogen Effluvium.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/web_logo.jpg') }}" alt="Logo">
+            <span>Hair & Scalp Health</span>
+        </div>
+        <div class="nav-buttons">
+            <button><a href="/common-diseases">Common Hair Diseases</a></button>
+            <button><a href="/predict-image">Upload Image</a></button>
+            <button><a href="/solutions">AI Health Advisor</a></button>
+            <button><a href="/developer">Developer</a></button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 style="text-align: center;">TELOGEN EFFLUVIUM</h1>
+        <img src="{{ url_for('static', filename='images/telogen_effluvium_0005.jpg') }}" alt="Telogen Effluvium">
+        <p>Telogen Effluvium is a type of hair loss that happens when a large number of hair follicles enter the resting (telogen) phase of the hair cycle, causing shedding. It is often triggered by physical or emotional stress, illness, or other factors.</p>
+
+        <h2>What Causes It?</h2>
+        <ul>
+            <li><strong>Stress:</strong> Emotional or physical stress can cause hair to fall out prematurely.</li>
+            <li><strong>Illness:</strong> Fever, surgery, or an infection can lead to temporary hair loss.</li>
+            <li><strong>Medications:</strong> Certain drugs, such as chemotherapy or birth control pills, can cause hair loss.</li>
+            <li><strong>Hormonal Changes:</strong> Changes in hormones, especially after pregnancy or childbirth, can trigger Telogen Effluvium.</li>
+            <li><strong>Dietary Deficiencies:</strong> Lack of essential nutrients like iron or protein can contribute to hair shedding.</li>
+        </ul>
+
+        <h2>How Can It Be Treated?</h2>
+        <p>Telogen Effluvium is usually temporary, and the hair often regrows over time. Here are ways to help manage it:</p>
+        <ul>
+            <li><strong>Address Underlying Causes:</strong> Identifying and managing triggers like stress or medication can help prevent further hair loss.</li>
+            <li><strong>Healthy Diet:</strong> Ensure you are getting enough vitamins and minerals, such as iron, vitamin D, and biotin.</li>
+            <li><strong>Minoxidil:</strong> A topical solution that can help stimulate hair growth and prevent further shedding.</li>
+            <li><strong>Stress Management:</strong> Practicing relaxation techniques, like meditation or yoga, can reduce stress levels and improve hair health.</li>
+            <li><strong>Avoid Hair Damage:</strong> Avoid harsh treatments or excessive heat styling to minimize hair breakage.</li>
+        </ul>
+        <p style="text-align: center;"><strong>IF THE PROBLEM DOESN’T GO AWAY, TALK TO A DOCTOR.</strong></p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Hair & Scalp Health. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

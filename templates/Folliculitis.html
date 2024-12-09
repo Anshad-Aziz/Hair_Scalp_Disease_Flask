@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folliculitis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Folliculitis.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/web_logo.jpg') }}" alt="Logo">
+            <span>Hair & Scalp Health</span>
+        </div>
+        <div class="nav-buttons">
+            <button><a href="/common-diseases">Common Hair Diseases</a></button>
+            <button><a href="/predict-image">Upload Image</a></button>
+            <button><a href="/solutions">AI Health Advisor</a></button>
+            <button><a href="/developer">Developer</a></button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>FOLLICULITIS</h1>
+        <img src="{{ url_for('static', filename='images/folliculitis_0005.jpg') }}" alt="Folliculitis">
+        <p>Folliculitis happens when hair follicles get inflamed, often from infection or irritation. It looks like small red bumps or pimples around the hair follicles and can feel itchy or painful.</p>
+
+        <h2>What Causes It?</h2>
+        <ul>
+            <li><strong>Bacteria:</strong> The most common cause is bacteria like Staphylococcus aureus.</li>
+            <li><strong>Fungal Infections:</strong> Fungi can also infect hair follicles and cause inflammation.</li>
+            <li><strong>Friction:</strong> Tight clothing or shaving can irritate the skin and lead to folliculitis.</li>
+            <li><strong>Blocked Follicles:</strong> Oils, sweat, or hair products can clog follicles and cause infection.</li>
+        </ul>
+
+        <h2>How Can It Be Treated?</h2>
+        <p>You can manage Folliculitis with these steps:</p>
+        <ul>
+            <li><strong>Good Hygiene:</strong> Keep the area clean and dry to avoid infection.</li>
+            <li><strong>Warm Compress:</strong> Use a warm, moist cloth to reduce swelling and relieve discomfort.</li>
+            <li><strong>Topical Treatments:</strong> Apply antibiotic or antifungal creams to clear up the infection.</li>
+            <li><strong>Avoid Irritation:</strong> Wear loose clothing and avoid shaving the affected area.</li>
+            <li><strong>See a Doctor:</strong> For severe or recurring cases, a doctor may prescribe stronger medications or other treatments.</li>
+        </ul>
+       <p class="centered-red"><strong>IF THE PROBLEM DOESN’T GO AWAY, TALK TO A DOCTOR.</strong></p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Hair & Scalp Health. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

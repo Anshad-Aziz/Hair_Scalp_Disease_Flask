@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Team</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='developer.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/web_logo.jpg') }}" alt="Logo">
+            <span>Hair & Scalp Health</span>
+        </div>
+        <div class="nav-buttons">
+            <button><a href="/common-diseases">Common Hair Diseases</a></button>
+            <button><a href="/predict-image">Upload Image</a></button>
+            <button><a href="/solutions">AI Health Advisor</a></button>
+            <button><a href="/developer">Developer</a></button>
+        </div>
+    </nav>
+
+    <!-- Developer Team Section -->
+    <div class="developer-team">
+        <h1>Meet the Visionaries Behind Hair & Scalp Health</h1>
+        <p>Our dedicated team of AI experts is committed to improving hair health through cutting-edge technology. Get to know the brilliant minds driving innovation in our field.</p>
+        <div class="team-members">
+            <!-- Developer 1 -->
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/mahesh.png') }}" alt="Mahesh Kumar Shetty">
+                <div class="member-details">
+                    <h3>B MAHESH KUMAR SHETTY</h3>
+                    <p><strong>USN:</strong> 4MT21AI012</p>
+                    <p><strong>Branch:</strong> Artificial Intelligence & Machine Learning</p>
+                    <p>A passionate AI/ML engineer working on the hair disease detection system.</p>
+                </div>
+            </div>
+            <!-- Developer 2 -->
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/anshad.jpg') }}" alt="Anshad Aziz">
+                <div class="member-details">
+                    <h3>ANSHAD AZIZ</h3>
+                    <p><strong>USN:</strong> 4MT21AI009</p>
+                    <p><strong>Branch:</strong> Artificial Intelligence & Machine Learning</p>
+                    <p>AI/ML enthusiast focused on healthcare applications.</p>
+                </div>
+            </div>
+            <!-- Developer 3 -->
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/shruthi_updated.jpg') }}" alt="Shruthi">
+                <div class="member-details">
+                    <h3>SHRUTHI</h3>
+                    <p><strong>USN:</strong> 4MT21AI052</p>
+                    <p><strong>Branch:</strong> Artificial Intelligence & Machine Learning</p>
+                    <p>Deep learning expert working on improving the prediction accuracy.</p>
+                </div>
+            </div>
+            <!-- Developer 4 -->
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/srijian .jpg') }}" alt="Srijan K">
+                <div class="member-details">
+                    <h3>SRIJAN K</h3>
+                    <p><strong>USN:</strong> 4MT21AI057</p>
+                    <p><strong>Branch:</strong> Artificial Intelligence & Machine Learning</p>
+                    <p>Specializing in AI applications in healthcare and medical image processing.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <!-- College Info Section -->
+            <div class="college-info">
+                <img src="{{ url_for('static', filename='images/MITE_Logo.jpg') }}" alt="College Logo" class="college-logo">
+                <h4>Mangalore Institute of Technology & Engineering (MITE)</h4>
+                <p>Location: Mangalore, Karnataka, India</p>
+                <p><a href="https://mite.ac.in/" target="_blank">Visit College Website</a></p>
+            </div>
+
+            <!-- Contact Info Section -->
+            <div class="contact-info">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:bmaheshkumarshetty99@gmail.com">bmaheshkumarshetty99@gmail.com</a></p>
+                <p>Phone: +91 81971 47397</p>
+            </div>
+
+            <!-- Social Media Links Section -->
+            <div class="social-links">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://github.com/yourprofile" target="_blank">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://twitter.com/yourprofile" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+
+            <!-- Copyright Information -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hair & Scalp Health. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

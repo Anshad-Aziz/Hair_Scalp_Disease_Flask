@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psoriasis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Psoriasis.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/web_logo.jpg') }}" alt="Logo">
+            <span>Hair & Scalp Health</span>
+        </div>
+        <div class="nav-buttons">
+            <button><a href="/common-diseases">Common Hair Diseases</a></button>
+            <button><a href="/predict-image">Upload Image</a></button>
+            <button><a href="/solutions">AI Health Advisor</a></button>
+            <button><a href="/developer">Developer</a></button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 style="text-align: center;">PSORIASIS</h1>
+        <img src="{{ url_for('static', filename='images/psoriasis_0005.jpg') }}" alt="Psoriasis">
+        <p>Psoriasis is a chronic autoimmune condition that causes skin cells to grow too quickly, leading to thick, scaly patches on the skin. It can affect different areas of the body, including the scalp.</p>
+
+        <h2>What Causes It?</h2>
+        <ul>
+            <li><strong>Immune System:</strong> Psoriasis occurs when the immune system mistakenly attacks healthy skin cells.</li>
+            <li><strong>Genetics:</strong> It often runs in families and can be inherited.</li>
+            <li><strong>Triggers:</strong> Stress, infections, certain medications, or injuries can trigger flare-ups.</li>
+        </ul>
+
+        <h2>How Can It Be Treated?</h2>
+        <p>You can manage Psoriasis with these steps:</p>
+        <ul>
+            <li><strong>Topical Treatments:</strong> Creams or ointments, like corticosteroids, to reduce inflammation.</li>
+            <li><strong>Phototherapy:</strong> Exposure to UV light can slow down the growth of skin cells.</li>
+            <li><strong>Oral Medications:</strong> Medications to suppress the immune system and reduce symptoms.</li>
+            <li><strong>Biologic Drugs:</strong> Targeted treatments that can help control severe psoriasis.</li>
+            <li><strong>Moisturizers:</strong> Keep the skin hydrated to prevent dryness and itching.</li>
+        </ul>
+        <p style="text-align: center;"><strong>IF THE PROBLEM DOESN’T GO AWAY, TALK TO A DOCTOR.</strong></p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Hair & Scalp Health. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

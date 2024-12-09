@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lichen Planus</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Lichen Planus.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/web_logo.jpg') }}" alt="Logo">
+            <span>Hair & Scalp Health</span>
+        </div>
+        <div class="nav-buttons">
+            <button><a href="/common-diseases">Common Hair Diseases</a></button>
+            <button><a href="/predict-image">Upload Image</a></button>
+            <button><a href="/solutions">AI Health Advisor</a></button>
+            <button><a href="/developer">Developer</a></button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 style="text-align: center;">LICHEN PLANUS</h1>
+        <img src="{{ url_for('static', filename='images/lichen_Planus_0003.jpg') }}" alt="Lichen Planus">
+        <p>Lichen Planus is an inflammatory condition that can affect the skin, scalp, nails, and mucous membranes. On the scalp, it can cause redness, irritation, and hair loss. It is not contagious.</p>
+
+        <h2>What Causes It?</h2>
+        <ul>
+            <li><strong>Immune System:</strong> Lichen Planus occurs when the immune system mistakenly attacks healthy tissues.</li>
+            <li><strong>Medications:</strong> Certain medicines, like pain relievers or antibiotics, can trigger it in some people.</li>
+            <li><strong>Infections:</strong> Viruses like hepatitis C might be linked to this condition.</li>
+            <li><strong>Stress:</strong> Stress can sometimes make symptoms worse.</li>
+        </ul>
+
+        <h2>How Can It Be Treated?</h2>
+        <p>You can manage Lichen Planus with these steps:</p>
+        <ul>
+            <li><strong>Topical Steroids:</strong> Apply creams prescribed by a doctor to reduce inflammation.</li>
+            <li><strong>Oral Medications:</strong> Take pills to control the immune response and reduce symptoms.</li>
+            <li><strong>Light Therapy:</strong> Use ultraviolet light treatments to improve skin condition.</li>
+            <li><strong>Moisturizers:</strong> Keep the skin hydrated to prevent irritation.</li>
+            <li><strong>See a Specialist:</strong> Consult a dermatologist for tailored treatment options.</li>
+        </ul>
+        <p style="text-align: center;"><strong>IF THE PROBLEM DOESN’T GO AWAY, TALK TO A DOCTOR.</strong></p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Hair & Scalp Health. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

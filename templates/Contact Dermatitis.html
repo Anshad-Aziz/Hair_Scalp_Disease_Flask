@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Dermatitis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Contact Dermatitis.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/web_logo.jpg') }}" alt="Logo">
+            <span>Hair & Scalp Health</span>
+        </div>
+        <div class="nav-buttons">
+            <button><a href="/common-diseases">Common Hair Diseases</a></button>
+            <button><a href="/predict-image">Upload Image</a></button>
+            <button><a href="/solutions">AI Health Advisor</a></button>
+            <button><a href="/developer">Developer</a></button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Contact Dermatitis</h1>
+        <img src="{{ url_for('static', filename='images/Contact_dermatitis_0002.jpg') }}" alt="Contact Dermatitis">
+        <p>Contact Dermatitis is when your skin gets red, itchy, and inflamed after touching something irritating or an allergen. It can be uncomfortable but is usually not serious.</p>
+
+        <h2>What Causes It?</h2>
+        <ul>
+            <li><strong>Irritants:</strong> Soaps, detergents, or chemicals that hurt your skin.</li>
+            <li><strong>Allergens:</strong> Things like nickel in jewelry, latex, or plants that cause an allergic reaction.</li>
+            <li><strong>Weather:</strong> Very hot or cold weather can irritate your skin.</li>
+        </ul>
+
+        <h2>How Can It Be Treated?</h2>
+        <p>You can manage Contact Dermatitis with these steps:</p>
+        <ul>
+            <li><strong>Avoid Triggers:</strong> Stay away from things that irritate your skin.</li>
+            <li><strong>Moisturizers:</strong> Use creams to keep your skin soft and help it heal.</li>
+            <li><strong>Anti-Itch Creams:</strong> Apply creams to reduce itching and redness.</li>
+            <li><strong>Antihistamines:</strong> Take medicines to stop allergic reactions and relieve itching.</li>
+            <li><strong>Cool Cloths:</strong> Use a damp cloth to calm irritated skin.</li>
+        </ul>
+        <p class="centered-red"><strong>IF THE PROBLEM DOESN’T GO AWAY, TALK TO A DOCTOR.</strong></p>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Hair & Scalp Health. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

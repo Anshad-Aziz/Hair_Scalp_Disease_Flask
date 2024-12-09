@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Male Pattern Baldness</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Male Pattern Baldness.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/web_logo.jpg') }}" alt="Logo">
+            <span>Hair & Scalp Health</span>
+        </div>
+        <div class="nav-buttons">
+            <button><a href="/common-diseases">Common Hair Diseases</a></button>
+            <button><a href="/predict-image">Upload Image</a></button>
+            <button><a href="/solutions">AI Health Advisor</a></button>
+            <button><a href="/developer">Developer</a></button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 style="text-align: center;">MALE PATTERN BALDNESS</h1>
+        <img src="{{ url_for('static', filename='images/male_pattern_baldness_0004.jpg') }}" alt="Male Pattern Baldness">
+        <p>Male Pattern Baldness, also known as androgenetic alopecia, is a common condition where men experience hair loss, usually starting at the hairline or the crown of the head. It is a gradual process and typically runs in families.</p>
+
+        <h2>What Causes It?</h2>
+        <ul>
+            <li><strong>Genetics:</strong> It often runs in families and is inherited.</li>
+            <li><strong>Hormones:</strong> Changes in hormones, particularly dihydrotestosterone (DHT), affect hair growth.</li>
+            <li><strong>Age:</strong> Hair loss becomes more common as men get older.</li>
+        </ul>
+
+        <h2>How Can It Be Treated?</h2>
+        <p>There are ways to manage Male Pattern Baldness:</p>
+        <ul>
+            <li><strong>Minoxidil:</strong> A topical solution applied to the scalp to slow hair loss and promote growth.</li>
+            <li><strong>Finasteride:</strong> A prescription medication that blocks DHT to prevent hair loss.</li>
+            <li><strong>Hair Transplant:</strong> A surgical procedure where hair follicles are moved to bald areas.</li>
+            <li><strong>Low-Level Laser Therapy:</strong> Uses light therapy to stimulate hair growth.</li>
+            <li><strong>Hairstyling:</strong> Using creative styles or wigs to cover thinning areas.</li>
+        </ul>
+        <p style="text-align: center;"><strong>IF THE PROBLEM DOESN’T GO AWAY, TALK TO A DOCTOR.</strong></p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Hair & Scalp Health. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

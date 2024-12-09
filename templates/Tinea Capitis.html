@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinea Capitis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Tinea Capitis.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/web_logo.jpg') }}" alt="Logo">
+            <span>Hair & Scalp Health</span>
+        </div>
+        <div class="nav-buttons">
+            <button><a href="/common-diseases">Common Hair Diseases</a></button>
+            <button><a href="/predict-image">Upload Image</a></button>
+            <button><a href="/solutions">AI Health Advisor</a></button>
+            <button><a href="/developer">Developer</a></button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 style="text-align: center;">TINEA CAPITIS</h1>
+        <img src="{{ url_for('static', filename='images/tineacapitis.jpg') }}" alt="Tinea Capitis">
+        <p>Tinea Capitis is a fungal infection of the scalp that causes hair loss, itching, and flaky, scaly patches. It is more common in children but can affect adults as well.</p>
+
+        <h2>What Causes It?</h2>
+        <ul>
+            <li><strong>Fungal Infection:</strong> Tinea Capitis is caused by fungi, commonly dermatophytes, that infect the hair follicles and scalp.</li>
+            <li><strong>Person-to-Person Contact:</strong> The infection can spread through direct contact with an infected person.</li>
+            <li><strong>Contaminated Objects:</strong> Sharing combs, hats, or other personal items can spread the infection.</li>
+            <li><strong>Weakened Immune System:</strong> People with compromised immune systems may be more susceptible to the infection.</li>
+        </ul>
+
+        <h2>How Can It Be Treated?</h2>
+        <p>Tinea Capitis can be treated with antifungal medications:</p>
+        <ul>
+            <li><strong>Oral Antifungal Medications:</strong> Prescription antifungal drugs, such as griseofulvin or terbinafine, are commonly used to treat Tinea Capitis.</li>
+            <li><strong>Topical Antifungal Creams:</strong> While they may not be sufficient for scalp infections, antifungal shampoos can help reduce the fungal load.</li>
+            <li><strong>Keep the Scalp Clean:</strong> Regularly wash the scalp and hair with antifungal shampoo to prevent spreading.</li>
+            <li><strong>Avoid Sharing Personal Items:</strong> To prevent the spread, avoid sharing combs, hats, and towels with others.</li>
+        </ul>
+        <p style="text-align: center;"><strong>IF THE PROBLEM DOESN’T GO AWAY, TALK TO A DOCTOR.</strong></p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Hair & Scalp Health. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

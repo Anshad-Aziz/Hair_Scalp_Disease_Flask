@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Image</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='predict-image.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/web_logo.jpg') }}" alt="Logo">
+            <span>Hair & Scalp Health</span>
+        </div>
+        <div class="nav-buttons">
+            <button><a href="/common-diseases">Common Hair Diseases</a></button>
+            <button><a href="/predict-image">Upload Image</a></button>
+            <button><a href="/solutions">Solutions</a></button>
+            <button><a href="/developer">Developer</a></button>
+        </div>
+    </nav>
+
+    <!-- Prediction Section -->
+    <div class="prediction-section">
+        <h1>Upload an Image for Prediction</h1>
+        <p>Select an image of your hair or scalp to predict the condition.</p>
+        <div class="upload-container">
+            <form action="/predict" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" accept="image/*" required>
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="college-info">
+                <img src="{{ url_for('static', filename='images/MITE_Logo.jpg') }}" alt="College Logo" class="college-logo">
+                <h4>Mangalore Institute of Technology & Engineering (MITE)</h4>
+                <p>Location: Mangalore, Karnataka, India</p>
+                <p><a href="https://mite.ac.in/" target="_blank">Visit College Website</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hair & Scalp Health. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair & Scalp Health</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='solutions.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/web_logo.jpg') }}" alt="Logo">
+            <span>Hair & Scalp Health</span>
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-button"><a href="/common-diseases">Common Hair Diseases</a></button>
+            <button class="nav-button"><a href="/predict-image">Upload Image</a></button>
+            <button class="nav-button"><a href="/solutions">AI Health Advisor</a></button>
+            <button class="nav-button"><a href="/developer">Developer</a></button>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <h1>AI Health Insights: Hair & Scalp</h1>
+        <p class="welcome-text">Discover personalized solutions to maintain and improve your hair health. Chat with our AI for customized advice and explore helpful resources tailored to your needs.</p>
+
+        <!-- Generative AI Section -->
+        <div class="ai-section">
+            <h2>Chat with Our AI Assistant</h2>
+            <div class="chat-container">
+                <div id="chat-messages" class="chat-messages"></div>
+                <div class="input-container">
+                    <input type="text" id="user-input" placeholder="Type your message here..." />
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Hair & Scalp Health. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Chat Interaction -->
+    <script>
+        document.getElementById('send-btn').addEventListener('click', function() {
+            const userInput = document.getElementById('user-input').value.trim();
+            const chatMessages = document.getElementById('chat-messages');
+
+            if (userInput) {
+                // Display User Message
+                chatMessages.innerHTML += `<div class="chat user"><span>You:</span> ${userInput}</div>`;
+
+                // Send Input to Backend and Fetch AI Response
+                fetch('/generate', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ input: userInput })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Display AI Response
+                    chatMessages.innerHTML += `<div class="chat ai"><span>AI:</span> ${data.response}</div>`;
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                    document.getElementById('user-input').value = '';
+                })
+                .catch(() => {
+                    chatMessages.innerHTML += `<div class="chat error"><span>AI:</span> Sorry, I encountered an error. Please try again.</div>`;
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                });
+            }
+        });
+    </script>
+</body>
+</html>
