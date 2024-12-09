@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0732f1; /* Light Blue background */
+    border: 2px solid red;
+    padding: 15px 20px; /* Padding around navbar */
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .logo img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
+nav .logo span {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav .nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-buttons button {
+    background-color: white; /* White background for buttons */
+    color: red; /* Red text color */
+    border: 2px solid red; /* Red border */
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase; /* Make button text uppercase */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+nav .nav-buttons button a {
+    color: red; /* Red text */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav .nav-buttons button:hover {
+    background-color: red; /* Red background on hover */
+    color: white; /* White text on hover */
+    border-color: white; /* White border on hover */
+}
+
+nav .nav-buttons button:hover a {
+    color: white; /* Ensure the link text is white on hover */
+}
+
+/* Actions Section */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    margin-top: 30px;
+}
+
+.actions button {
+    background-color: white;
+    color: #007BFF;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.actions button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.actions button:hover a {
+    color: white; /* Ensure the link text is white on hover */
+}
+
+/* Prediction Section */
+.prediction-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.prediction-section h1 {
+    font-size: 32px;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+.prediction-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.upload-container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px dashed #d32f2f;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.upload-container input[type="file"] {
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.upload-container button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-container button:hover {
+    background-color: #a12727;
+}
+
+.result-container {
+    margin-top: 30px;
+}
+
+.result-container h2 {
+    font-size: 24px;
+    color: #d32f2f;
+}
+
+.result-container p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .footer-content {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #d32f2f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.college-logo {
+    width: 40px; /* Reduce the width to make the logo smaller */
+    height: auto; /* Maintain the aspect ratio */
+    margin-bottom: 10px;
+}
+.camera-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.camera-button:hover {
+    background-color: #0056b3;
+}

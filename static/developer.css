@@ -1,0 +1,216 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0732f1; /* Light Blue background */
+    border: 2px solid red;
+    padding: 15px 20px; /* Padding around navbar */
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 40px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px;
+}
+
+nav .logo span {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+nav .nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-buttons button {
+    background-color: white; /* White background for buttons */
+    color: red; /* Red text color */
+    border: 2px solid red; /* Red border */
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase; /* Make button text uppercase */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+nav .nav-buttons button a {
+    color: red; /* Red text */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav .nav-buttons button:hover {
+    background-color: red; /* Red background on hover */
+    color: white; /* White text on hover */
+    border-color: white; /* White border on hover */
+}
+
+nav .nav-buttons button:hover a {
+    color: white; /* Ensure the link text is white on hover */
+}
+
+/* Developer Team Section */
+.developer-team {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.developer-team h1 {
+    font-size: 36px;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+/* Team Members Grid */
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+    margin: 0 10px; /* Side spacing for centering */
+}
+
+.team-member {
+    background-color: white;
+    border: 2px solid #d32f2f;
+    border-radius: 15px;
+    width: 230px; /* Uniform size */
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 18px;
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Responsive Styling for Team Members */
+@media (max-width: 1200px) {
+    .team-members {
+        grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    }
+}
+
+@media (max-width: 900px) {
+    .team-members {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .team-members {
+        grid-template-columns: 1fr; /* 1 item per row */
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-content div {
+    max-width: 300px;
+}
+
+.footer-content h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #d32f2f;
+}
+
+.footer-content p, .footer-content ul {
+    font-size: 14px;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: #d32f2f;
+}
+
+.college-info {
+    text-align: center;
+}
+
+.college-logo {
+    width: 50px; /* Adjust logo size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Responsive Footer */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}

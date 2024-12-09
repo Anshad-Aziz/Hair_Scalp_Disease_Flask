@@ -1,0 +1,232 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Use a more modern and sleek font */
+    margin: 0;
+    padding: 0;
+    background-color: #f7f8fa; /* Light grey background */
+    color: #333;
+}
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0732f1; /* Bright Blue background */
+    border-bottom: 3px solid #ff6347; /* Tomato red bottom border */
+    padding: 15px 20px; /* Padding around navbar */
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 50px; /* Adjust logo size */
+    height: auto;
+    margin-right: 15px;
+    border-radius: 50%; /* Make logo circular */
+}
+
+nav .logo span {
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px; /* Slightly increased spacing */
+}
+
+nav .nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-buttons button {
+    background-color: white; /* White background for buttons */
+    color: #1e90ff; /* Bright Blue text color */
+    border: 2px solid #ff6347; /* Tomato red border */
+    padding: 10px 25px;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    text-transform: uppercase; /* Make button text uppercase */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+nav .nav-buttons button a {
+    color: #1e90ff; /* Bright Blue text */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav .nav-buttons button:hover {
+    background-color: #ff6347; /* Tomato red background on hover */
+    color: white; /* White text on hover */
+    border-color: white; /* White border on hover */
+}
+
+/* Optional: Styling for the "Developer" button */
+nav .nav-buttons button:last-child {
+    margin-right: 0; /* Remove margin on the last button */
+}
+
+/* Hover effect for all navbar buttons */
+nav .nav-buttons button:hover a {
+    color: white; /* Ensure the link text is white on hover */
+}
+
+/* Main Content */
+.container {
+    padding: 40px;
+    text-align: left; /* Align text to the left for a more traditional look */
+    background-color: #f9f9f9; /* Soft light gray background */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
+    border-radius: 15px; /* More rounded corners */
+    margin: 30px auto;
+    max-width: 900px; /* Slightly wider for better readability */
+    font-family: 'Poppins', sans-serif; /* Modern font for better aesthetics */
+}
+
+/* Main Heading */
+h1 {
+    color: #ff4500; /* Bright orange for a welcoming look */
+    font-size: 42px; /* Increased font size for main heading */
+    margin-bottom: 20px;
+    font-weight: 700; /* Bold text for emphasis */
+    text-align: center; /* Center the heading */
+}
+
+
+/* Subheadings */
+h2 {
+    color: #0077ff; /* Deep blue for a modern contrast */
+    font-size: 36px; /* Increased font size for subheadings */
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 600; /* Semi-bold text */
+}
+
+/* Content Paragraphs */
+.container p {
+    font-size: 1.2em; /* Larger font for easier reading */
+    color: #333; /* Darker gray for better contrast */
+    line-height: 1.8; /* Comfortable line spacing */
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* Unordered List Styling */
+ul {
+    margin: 20px 0;
+    padding-left: 40px; /* Indent list items */
+}
+
+ul li {
+    font-size: 1.1em; /* Slightly larger font for list items */
+    line-height: 1.6; /* Comfortable line spacing for list items */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Disease Gallery Grid */
+.disease-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+/* Disease Cards */
+.disease-card {
+    border: 2px solid #0077ff; /* Matching border with subheading color */
+    border-radius: 15px; /* Rounded corners for a friendly look */
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #f0f8ff); /* Subtle gradient background */
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover Effects on Cards */
+.disease-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for focus */
+    transform: translateY(-8px); /* Enhanced lift effect */
+}
+
+/* Images in Cards */
+.disease-card img {
+    width:100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px; /* Space below the image */
+}
+
+/* Specific Image in Container */
+.container img {
+    width: 60%; /* Set the width to 100% of the container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 600px; /* Set a maximum width */
+    display: block; /* Center the image within the container */
+    margin: 0 auto 20px; /* Add margin below the image for spacing */
+}
+
+/* Card Headings */
+.disease-card h2 {
+    color: #ff4500; /* Bright orange matching the main heading */
+    font-size: 30px; /* Increased font size for card headings */
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+/* Card Paragraphs */
+.disease-card p {
+    font-size: 1em; /* Clear and readable text */
+    color: #555; /* Neutral gray for softer text appearance */
+    line-height: 1.6; /* Comfortable spacing */
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 34px; /* Adjusted font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 28px; /* Adjusted font size for smaller screens */
+    }
+
+    .disease-gallery {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+}
+
+/* Footer Section */
+footer {
+    margin-top: auto;
+    background-color: #1e90ff; /* Bright Blue background */
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the footer */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Centered and Red Text */
+.centered-red {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
