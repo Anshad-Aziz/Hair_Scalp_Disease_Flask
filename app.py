@@ -7,7 +7,7 @@ from werkzeug.utils import secure_filename
 import google.generativeai as genai
 
 # Configure the generative AI model
-genai.configure(api_key="AIzaSyCvjDaJDwlIq9GWx3goPdt-DsOSYjL4AdM")
+genai.configure(api_key="***********************")
 gen_model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Initialize Flask app
